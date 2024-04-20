@@ -6,11 +6,11 @@ import Login from "./components/login/Login";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
-    <>{!isLoggedIn ? <Login setIsLoggedIn={setIsLoggedIn} /> : <Employees />}</>
-  //   <>
-  //     <Login />
-  //     <Employees />
-  //   </>
+    // <>{!isLoggedIn ? <Login setIsLoggedIn={setIsLoggedIn} /> : <Employees />}</>
+    <>
+      <Login />
+      <Employees />
+    </>
   );
 }
 

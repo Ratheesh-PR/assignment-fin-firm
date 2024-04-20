@@ -8,6 +8,8 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Box } from "@mui/system";
 
+const headStyle = { fontWeight: "bold" };
+
 const Employees = () => {
   return (
     <Box sx={{ m: 2 }}>
@@ -15,12 +17,12 @@ const Employees = () => {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell sx={{ fontWeight: "bold" }}>Name</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Email</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Role</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Active Status</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Designation</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Date of Birth</TableCell>
+              <TableCell sx={headStyle}>Name</TableCell>
+              <TableCell sx={headStyle}>Email</TableCell>
+              <TableCell sx={headStyle}>Role</TableCell>
+              <TableCell sx={headStyle}>Active Status</TableCell>
+              <TableCell sx={headStyle}>Designation</TableCell>
+              <TableCell sx={headStyle}>Date of Birth</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
