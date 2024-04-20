@@ -40,8 +40,8 @@ const Login = () => {
             "Content-type": "application/json",
           },
           body: JSON.stringify({
-            email: "crew1@gmail.com",
-            password: "Password@2024",
+            email: email,
+            password: password,
           }),
         }
       );
