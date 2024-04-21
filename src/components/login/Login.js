@@ -16,7 +16,7 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import Security from "@mui/icons-material/Security";
 
-const Login = () => {
+const Login = ({setIsLoggedIn}) => {
   const [showPassword, setShowPassword] = React.useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -26,8 +26,6 @@ const Login = () => {
   };
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  console.log(email);
-  console.log(password);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -50,6 +48,7 @@ const Login = () => {
       }
       const data = await response.json();
       console.log(data);
+      setIsLoggedIn(true)
     } catch (error) {
       console.log(error.message);
     }
